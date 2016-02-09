@@ -14,13 +14,13 @@
    roles:
       - orahost-storage
 
-# - name: Oracle Grid Infrastructure installation
-#   hosts: 12cR1-rac
-#   user: vagrant
-#   sudo: yes
-#   roles:
-#      - oraswgi-install
-#
+ - name: Oracle Grid Infrastructure installation
+   hosts: 12cR1-rac
+   user: vagrant
+   sudo: yes
+   roles:
+      - oraswgi-install
+
 # - name: ASM Configuration, Database Server Installation & Database Creation
 #   hosts: 12cR1-rac
 #   user: vagrant

@@ -39,3 +39,6 @@
         - {device: /dev/sdh, asmlabel: reco2}
         - {device: /dev/sdi, asmlabel: reco3}
 
+  # oraswgi-install
+  oracle_sw_source_local: /software/12cR1/12.1.0.2
+
