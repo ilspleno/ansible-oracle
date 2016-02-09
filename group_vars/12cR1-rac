@@ -39,6 +39,8 @@
         - {device: /dev/sdh, asmlabel: reco2}
         - {device: /dev/sdi, asmlabel: reco3}
 
-  # oraswgi-install
+  # oraswgi-install - have to override ALL group defaults for NFS
+  is_sw_source_local: true
   oracle_sw_source_local: /software/12cR1/12.1.0.2
-
+  install_from_nfs: false
+  
