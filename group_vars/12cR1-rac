@@ -1,2 +1,41 @@
 ---
+
+  # common
   configure_public_yum_repo: false
+
+  # orahost
+  role_separation: false
+  device_persistence: udev
+
+  # orahost-storage
+  asm_diskgroups:
+    - diskgroup: ocrvote
+      properties:
+        - {redundancy: external, ausize: 1}
+      attributes:
+        - {name: 'compatible.rdbms', value: 11.2.0.4.0}
+        - {name: 'compatible.asm', value: 12.1.0.2.0}
+      disk:
+        - {device: /dev/sdb, asmlabel: ocrvote1}
+        - {device: /dev/sdc, asmlabel: ocrvote2}
+        - {device: /dev/sdd, asmlabel: ocrvote3}
+    - diskgroup: data
+      properties:
+        - {redundancy: external, ausize: 1}
+      attributes:
+        - {name: compatible.rdbms, value: 11.2.0.4.0}
+        - {name: compatible.asm, value: 12.1.0.2.0}
+      disk:
+        - {device: /dev/sde, asmlabel: data01}
+        - {device: /dev/sdf, asmlabel: data02}
+    - diskgroup: reco
+      properties:
+        - {redundancy: external, ausize: 1}
+      attributes:
+        - {name: compatible.rdbms, value: 11.2.0.4.0}
+        - {name: compatible.asm, value: 12.1.0.2.0}
+      disk:
+        - {device: /dev/sdg, asmlabel: reco1}
+        - {device: /dev/sdh, asmlabel: reco2}
+        - {device: /dev/sdi, asmlabel: reco3}
+

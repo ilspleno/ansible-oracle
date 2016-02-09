@@ -7,13 +7,13 @@
       - common
       - orahost
 
-# - name: Storage Configuration 
-#   hosts: 12cR1-rac
-#   user: vagrant
-#   sudo: yes
-#   roles:
-#      - orahost-storage
-#
+ - name: Storage Configuration 
+   hosts: 12cR1-rac
+   user: vagrant
+   sudo: yes
+   roles:
+      - orahost-storage
+
 # - name: Oracle Grid Infrastructure installation
 #   hosts: 12cR1-rac
 #   user: vagrant
