@@ -46,3 +46,4 @@
   install_from_nfs: false
   oracle_asm_init_dg: ocrvote 
   oracle_install_option_gi: CRS_CONFIG
+  hostgroup: twelvec-rac
