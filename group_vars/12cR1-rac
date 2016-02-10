@@ -46,4 +46,4 @@
   install_from_nfs: false
   oracle_asm_init_dg: ocrvote 
   oracle_install_option_gi: CRS_CONFIG
-  hostgroup: twelvec-rac
+  hostgroup: 12cR1-rac			# The ANSIBLE GROUP
