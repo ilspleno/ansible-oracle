@@ -43,4 +43,4 @@
   is_sw_source_local: true
   oracle_sw_source_local: /software/12cR1/12.1.0.2
   install_from_nfs: false
-  
+  oracle_asm_init_dg: ocrvote 
