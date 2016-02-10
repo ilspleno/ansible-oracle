@@ -7,6 +7,7 @@
   role_separation: false
   device_persistence: udev
   configure_cluster: true
+  configure_ssh: true
 
   # orahost-storage
   asm_diskgroups:
