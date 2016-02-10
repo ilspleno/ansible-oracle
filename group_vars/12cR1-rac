@@ -48,3 +48,6 @@
   oracle_install_option_gi: CRS_CONFIG
   hostgroup: 12cR1-rac			# The ANSIBLE GROUP
   oracle_cluster_name: twelvec-rac
+  oracle_scan: twelvec-rac-scan
+  oracle_gi_nic_pub: eth1
+  oracle_gi_nic_priv: eth2
