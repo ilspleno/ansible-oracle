@@ -55,3 +55,6 @@
 
   # oraasm-createdg
   oracle_install_version_gi: 12.1.0.2
+
+  # oraswdb-install
+  oracle_version_db: 12.1.0.2
