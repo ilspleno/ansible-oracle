@@ -52,3 +52,6 @@
   oracle_scan: twelvec-rac-scan
   oracle_gi_nic_pub: eth1
   oracle_gi_nic_priv: eth2
+
+  # oraasm-createdg
+  oracle_install_version_gi: 12.1.0.2
