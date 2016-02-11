@@ -76,3 +76,4 @@
       oracle_database_type: MULTIPURPOSE                   # MULTIPURPOSE|DATA_WAREHOUSING|OLTP
       redolog_size_in_mb: 500
       delete_db: false
+      state: present
