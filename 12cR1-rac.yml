@@ -27,5 +27,5 @@
    sudo: yes
    roles:
       - oraasm-createdg
-#      - oraswdb-install
+      - oraswdb-install
 #      - oradb-create
