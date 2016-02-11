@@ -57,6 +57,7 @@
   oracle_install_version_gi: 12.1.0.2
 
   # oraswdb-install
+  oracle_gi_cluster_type: standard
   oracle_databases:                                               # Dictionary describing the databases to be installed
     - home: dbhome_1                    # 'Last' directory in ORACLE_HOME path (e.g /u01/app/oracle/12.1.0.2/racdb)
       oracle_version_db: 12.1.0.2                         # Oracle versiono
