@@ -58,6 +58,8 @@
 
   # oraswdb-install
   oracle_gi_cluster_type: standard
+  oracle_dbf_dir_asm: "DATA"
+  oracle_reco_dir_asm: "RECO"       
   oracle_databases:                                               # Dictionary describing the databases to be installed
     - home: dbhome_1                    # 'Last' directory in ORACLE_HOME path (e.g /u01/app/oracle/12.1.0.2/racdb)
       oracle_version_db: 12.1.0.2                         # Oracle versiono
