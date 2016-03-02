@@ -1,0 +1,31 @@
+---
+ - name: Host configuration
+   hosts: PROJECTNAME
+   user: vagrant
+   sudo: yes
+   roles:
+      - common
+      - orahost
+
+ - name: Storage Configuration 
+   hosts: PROJECTNAME
+   user: vagrant
+   sudo: yes
+   roles:
+      - orahost-storage
+
+ - name: Oracle Grid Infrastructure installation
+   hosts: PROJECTNAME
+   user: vagrant
+   sudo: yes
+   roles:
+      - oraswgi-install
+
+ - name: ASM Configuration, Database Server Installation & Database Creation
+   hosts: PROJECTNAME
+   user: vagrant
+   sudo: yes
+   roles:
+      - oraasm-createdg
+      - oraswdb-install
+      - oradb-create
