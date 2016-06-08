@@ -20,7 +20,7 @@ if [[ $chkexist == 1 ]]; then
  echo "Error: $scsiid is already present. Exiting"
  continue
 fi
-echo "KERNEL==\"sd?1\", BUS==\"scsi\", PROGRAM==\"/sbin/scsi_id -g -u -d /dev/\$parent\", RESULT==\"$scsiid\", NAME=\"$label\", OWNER=\"$owner\", GROUP=\"$group\", MODE=\"0660\"" >> $TEMPFILE
+echo "KERNEL==\"sd*1\", BUS==\"scsi\", PROGRAM==\"/sbin/scsi_id -g -u -d /dev/\$parent\", RESULT==\"$scsiid\", NAME=\"$label\", OWNER=\"$owner\", GROUP=\"$group\", MODE=\"0660\"" >> $TEMPFILE
 
 done < {{ oracle_rsp_stage }}/udev-device-input.txt
 
